@@ -13,7 +13,7 @@ impl PositiveNonzeroInteger {
         // Read the tests below to clarify what should be returned.
         if value > 0 {
             Ok(Self(value as u64))
-        } else if value == 0 {
+        } else if  value == 0 {
             Err(CreationError::Zero)
         } else {
             Err(CreationError::Negative)
